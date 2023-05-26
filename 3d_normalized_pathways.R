@@ -1,3 +1,6 @@
+library(escape)
+#perform standart escape analysis to get ES2 file.
+
 axdev <- aggregate(lyd_RGC$GOBP_AXON_DEVELOPMENT, list(lyd_RGC$annotation, lyd_RGC$background), FUN = mean)
 axdev$axdev <- fun_range(x = axdev$x)
 opnm <- aggregate(lyd_RGC$GOBP_OPTIC_NERVE_MORPHOGENESIS, list(lyd_RGC$annotation, lyd_RGC$background), FUN = mean)
